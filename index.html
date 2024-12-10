@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Título principal da página -->
+    <h2>Digite um número para gerar uma tabuada</h2>
+
+    <!-- Formulário para entrada de valores -->
+    <form id="multiplicador-form">
+        <!-- Controle para inserir o número base da tabuada -->
+        <div class="form-controle">
+            <label for="number">Tabuada do:</label>
+            <input type="number" id="number" name="number" placeholder="3" />
+        </div>
+        <!-- Controle para definir até qual número multiplicar -->
+        <div class="form-controle">
+            <label for="multiplicador">Multiplicar até:</label>
+            <input type="number" id="multiplicador" name="multiplicador" value="10" />
+        </div>
+        <!-- Botão de envio para gerar a tabuada -->
+        <input type="submit" value="Calcular">
+    </form>
+
+    <!-- Área onde os resultados da tabuada serão exibidos -->
+    <div id="multiplicador-tabela">
+        <h2 id="multiplicador-titulo">Tabela do número: <span></span></h2>
+        <div id="multiplicador-operacao">
+            <p>Informe o número para calcular uma tabuada...</p>
+        </div>
+    </div>
+</body>
+
+</html>
